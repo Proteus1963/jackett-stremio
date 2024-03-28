@@ -22,11 +22,11 @@ const defaultConfig = {
 
   "dontSearchByYear": process.env.DONT_SEARCH_BY_YEAR || false,
 
-  "responseTimeout": parseInt(process.env.RESPONSE_TIMEOUT) || 8000,
+  "responseTimeout": parseInt(process.env.RESPONSE_TIMEOUT) || 10000,
 
   "addonPort": parseInt(process.env.PORT) || 7000,
 
-  "minimumSeeds": parseInt(process.env.MIN_SEED) || 5,
+  "minimumSeeds": parseInt(process.env.MIN_SEED) || 0,
 
   "maximumResults": parseInt(process.env.MAX_RESULTS) || 5,
 
@@ -52,7 +52,7 @@ const defaultConfig = {
 
     "readTimeout": parseInt(process.env.JACKETT_RTIMEOUT) || 8000,
 
-    "indexerFilters": process.env.INDEXER_FILTERS || "status:healthy,test:passed" // instead of `all`.
+    "indexerFilters": process.env.INDEXER_FILTERS || "all"  //"status:healthy,test:passed" // instead of `all`.
   },
 
   "additionalSources": process.env.ADDITIONAL_SOURCES || ""
