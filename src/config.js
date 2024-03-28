@@ -2,7 +2,7 @@ const { URL } = require('url');
 
 const defaultConfig = {
 
-  "addonName": process.env.ADDON_NAME || "Jackett",
+  "addonName": process.env.ADDON_NAME || "Pr0T3u$ Jackett",
 
   "dontParseTorrentFiles": process.env.DONT_PARSE_TORRENT_FILES || false,
 
@@ -50,9 +50,9 @@ const defaultConfig = {
 
     "apiKeys": process.env.JACKETT_APIKEYS || process.env.JACKETT_APIKEY || "x99nve4zvkbdgf4xdkywngveohh9rzib",  // JACKETT_APIKEY is for backwards compatibility
 
-    "readTimeout": parseInt(process.env.JACKETT_RTIMEOUT) || 8000,
+    "readTimeout": parseInt(process.env.JACKETT_RTIMEOUT) || 10000,
 
-    "indexerFilters": process.env.INDEXER_FILTERS || "Torrentz2nz"  //"status:healthy,test:passed" // instead of `all`.
+    "indexerFilters": process.env.INDEXER_FILTERS || "torrentz2.nz"  //"status:healthy,test:passed" // instead of `all`.
   },
 
   "additionalSources": process.env.ADDITIONAL_SOURCES || ""
