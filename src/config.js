@@ -40,15 +40,15 @@ const defaultConfig = {
 
   "cacheResultsTime": parseInt(process.env.CACHE_RESULTS_TIME) || 180,
 
-  "tmdbAPIKey": process.env.TMDB_APIKEY || "",
+  "tmdbAPIKey": process.env.TMDB_APIKEY || "8b32222ed5da2fa7ff31e7ab08c8f64d",
 
   "updateTrackersInterval": parseInt(process.env.UPDATE_TRACKERS_INTERVAL) || 1440,
 
   "jackett": {
 
-    "hosts": process.env.JACKETT_HOSTS || process.env.JACKETT_HOST || "http://127.0.0.1:9117/", // JACKETT_HOST is for backwards compatibility
+    "hosts": process.env.JACKETT_HOSTS || process.env.JACKETT_HOST || "http://192.168.1.150:9117/", // JACKETT_HOST is for backwards compatibility
 
-    "apiKeys": process.env.JACKETT_APIKEYS || process.env.JACKETT_APIKEY || "",  // JACKETT_APIKEY is for backwards compatibility
+    "apiKeys": process.env.JACKETT_APIKEYS || process.env.JACKETT_APIKEY || "x99nve4zvkbdgf4xdkywngveohh9rzib",  // JACKETT_APIKEY is for backwards compatibility
 
     "readTimeout": parseInt(process.env.JACKETT_RTIMEOUT) || 8000,
 
