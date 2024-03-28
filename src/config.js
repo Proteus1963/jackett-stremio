@@ -40,7 +40,7 @@ const defaultConfig = {
 
   "cacheResultsTime": parseInt(process.env.CACHE_RESULTS_TIME) || 180,
 
-  "tmdbAPIKey": process.env.TMDB_APIKEY || "8b32222ed5da2fa7ff31e7ab08c8f64d",
+  "tmdbAPIKey": process.env.TMDB_APIKEY || "",
 
   "updateTrackersInterval": parseInt(process.env.UPDATE_TRACKERS_INTERVAL) || 1440,
 
