@@ -52,7 +52,7 @@ const defaultConfig = {
 
     "readTimeout": parseInt(process.env.JACKETT_RTIMEOUT) || 10000,
 
-    "indexerFilters": process.env.INDEXER_FILTERS || "torrentz2.nz"  //"status:healthy,test:passed" // instead of `all`.
+    "indexerFilters": process.env.INDEXER_FILTERS || "all"  //"status:healthy,test:passed" // instead of `all`.
   },
 
   "additionalSources": process.env.ADDITIONAL_SOURCES || ""
